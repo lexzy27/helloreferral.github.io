@@ -7,11 +7,11 @@ app = Flask(__name__)
 def hello():
     return render_template('hello.html')
 
-@app.route('/display')
-def display():
- return render_template('display.html')
+    @app.route('/')
+def hello_referral():
+     return render_template('hello.html')
 
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
+        
